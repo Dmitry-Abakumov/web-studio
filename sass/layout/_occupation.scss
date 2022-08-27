@@ -1,0 +1,43 @@
+@media screen and (max-width: 1199px) {
+    .occupation {
+        display: none;
+    }
+}
+
+.occupation__title {
+    margin-bottom: 50px;
+}
+
+.occupation__list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.occupation {
+    padding-bottom: 94px;
+}
+
+.occupation__list-item {
+    position: relative;
+
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.occupation__img-text {
+    position: absolute;
+    bottom: 0;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFFFFF;
+    @include font(14px, 16px);
+    letter-spacing: 0.03em;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    min-height: 70px;
+}

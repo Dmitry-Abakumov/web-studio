@@ -1,0 +1,87 @@
+.logo__text-invert {
+    color: #FFFFFF
+}
+
+.address-list__link {
+    font-style: normal;
+    @include font(14px, 24px);
+    font-weight: 400;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address-list__link_color {
+    color: #FFFFFF;
+}
+
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2F303A;
+}
+
+.page-footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.address-list__item {
+    margin-bottom: 8px;
+}
+
+.social-list__icon_footer-color {
+    fill: #FFFFFF
+}
+
+.social-list__link_footer-bg-color {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 767px) {
+    .page-footer__social-list {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .page-footer__container {
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .address-list__item:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    .page-footer__container {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page-footer__logo-adress-wrapper {
+        margin-right: 165px;
+    }
+}
+
+@media screen  and (min-width: 1200px) {
+    .address-list__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    
+    .page-footer__logo-adress-wrapper {
+        margin-right: 60px;
+    }
+    
+    .address-list__item:not(:last-child) {
+        margin-bottom: 8px;
+    }
+    
+}
+

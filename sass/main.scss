@@ -1,0 +1,30 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+@import './base/common';
+
+@import './componenets/btn';
+@import './componenets/logo';
+@import './componenets/container';
+@import './componenets/title';
+@import './componenets/backdrop';
+@import './componenets/modal-window';
+@import './componenets/modal-form';
+@import './componenets/email-form';
+@import './componenets/social-list';
+@import './componenets/call';
+@import './componenets/modal-close-btn';
+@import './componenets/check-box';
+@import './componenets/mobile-menu-open.scss';
+@import './componenets/mobile-menu';
+
+@import './layout/page-header';
+@import './layout/hero';
+@import './layout/hang';
+@import './layout/occupation';
+@import './layout/team';
+@import './layout/our-clients';
+@import './layout/page-footer';
+@import './layout/portfolio';

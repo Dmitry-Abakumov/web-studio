@@ -1,0 +1,46 @@
+.check-desc {
+    @extend %flex-centering;
+    margin-bottom: 30px;
+
+    @include font(12px, 14px);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: #757575;
+
+    &::before {
+        margin-right: 7px;
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-radius: 2px;
+        border: 2px solid var(--primary-font-color);
+
+        transition: background-color var(--transition-dur-and-func), border-color var(--transition-dur-and-func);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .check-desc {
+        @include font(14px, 24px);
+    } 
+}
+
+.check-desc__policy-link {
+    color: var(--accent-color)
+}
+
+
+.checkbox:checked+.check-desc::before {
+    background-color: var(--accent-color);
+    background-image: url(../images/svg/check-box/check.svg);
+    border-color: var(--accent-color);
+    background-size: contain;
+    background-origin: border-box;
+}
+
+@media screen and (max-width: 460px) {
+    .check-desc {
+        @include font(8px, 9.3px);
+    }
+}
